@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="446.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+   <children>
+      <Label layoutX="191.0" layoutY="37.0" prefHeight="35.0" prefWidth="277.0" text="Hamming code generator">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="data" layoutX="104.0" layoutY="131.0" prefHeight="25.0" prefWidth="399.0" />
+      <TextArea fx:id="pes" layoutX="438.0" layoutY="223.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="recivied" layoutX="25.0" layoutY="288.0" prefHeight="25.0" prefWidth="399.0" />
+      <Label layoutX="114.0" layoutY="107.0" text="Input data" />
+      <Label layoutX="114.0" layoutY="164.0" text="Parity" />
+      <Label layoutX="24.0" layoutY="271.0" text="Recived data" />
+      <TextField fx:id="error" layoutX="102.0" layoutY="355.0" prefHeight="45.0" prefWidth="55.0" />
+      <Label layoutX="116.0" layoutY="334.0" text="Error" />
+      <Button layoutX="198.0" layoutY="411.0" mnemonicParsing="false" onAction="#finde" text="Find error" />
+      <Button layoutX="252.0" layoutY="181.0" mnemonicParsing="false" onAction="#findTrans" text="Generate code" />
+      <ComboBox fx:id="parity" layoutX="114.0" layoutY="181.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="error1" layoutX="532.0" layoutY="121.0" prefHeight="45.0" prefWidth="55.0" />
+      <Label layoutX="172.0" layoutY="334.0" text="Error-double" />
+      <TextField fx:id="error11" layoutX="185.0" layoutY="355.0" prefHeight="45.0" prefWidth="55.0" />
+      <TextField fx:id="error111" layoutX="276.0" layoutY="355.0" prefHeight="45.0" prefWidth="55.0" />
+      <Label layoutX="276.0" layoutY="334.0" text="Error bit" />
+   </children>
+</AnchorPane>
